@@ -44,9 +44,9 @@ Para ello, contamos con 2 datasets: uno para entrenar y otro para realizar las p
 
 ### Librerías
 
-Matplotlib
-Pandas
-Nummpy 
-Skalearn
-Keras
-Math
+- Matplotlib
+- Pandas
+- Nummpy 
+- Skalearn
+- Keras
+- Math
