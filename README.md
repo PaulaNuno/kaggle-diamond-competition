@@ -7,28 +7,37 @@
 
 
 
-#Machine learning para predecir el precio de los diamantes
-##[Competición](https://www.kaggle.com/c/diamonds-datamad0820) de Ironhack en Kaggle
+# Machine learning para predecir el precio de los diamantes  
+## [Competición](https://www.kaggle.com/c/diamonds-datamad0820) de Ironhack en Kaggle
 
+Este proyecto forma parta de una competición donde debemos de precedir el precio de los diamantes poniendo en práctica las técnicas de machine learning que hemos visto.
+Para ello, contamos con 2 datasets: uno para entrenar y otro para realizar las pruebas.
 
+### Características de los diamantes
 
-The evaluation metric chosen for this competition is the RMSE (Root Mean Squared Error):
+id: solo para archivos de envío de prueba y muestra, id para identificación de muestra de predicción
+precio: precio en USD
+quilates: peso del diamante
+corte: calidad del corte (Regular, Bueno, Muy Bueno, Premium, Ideal)
+color: color diamante, de J (peor) a D (mejor)
+claridad: una medida de la claridad del diamante (I1 (peor), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (mejor))
+x: longitud en mm
+y: ancho en mm
+z: profundidad en mm
+profundidad: porcentaje de profundidad total = z / media (x, y) = 2 * z / (x + y) (43--79)
+tabla: ancho de la parte superior del diamante en relación con el punto más ancho (43--95)
 
+### Modelos implementados y librerías 
 
-Possible regression models:
+- GradientBoostingRegressor con Sklearn
+- RandomForestRegressor con Sklearn
+- ANN (red neuronal artificial) con Keras 
 
-LinearRegression
-DecisionTreeRegressor
-KNeighborsRegressor
-GradientBoostingRegressor
-RandomForestRegressor
+### Técnicas sugeridas·
 
-Possible techniques, in addition to studying the problem and drawing your conclusions:
-
-One hot encoding: proceso mediante el cual las variables categóricas se convierten en una forma que podría proporcionarse a los algoritmos de ML para hacer un mejor trabajo en la predicción. Toma una columna que tiene datos categóricos, que se han codificado en etiquetas, y luego divide la columna en varias columnas. Los números se reemplazan por unos y ceros, según qué columna tenga qué valor.0 indica inexistente mientras que 1 indica existente.
-
-Label encoding: codificamos nombres/ características en datos numéricos. 
-Get dummies
-PCA
-Consumption of external API and / or web scraping
-Regression
+- One hot encoding
+- Label encoding
+- Get dummies 
+- PCA
+- API / web scraping
+- Regression
