@@ -27,13 +27,13 @@ Para ello, contamos con 2 datasets: uno para entrenar y otro para realizar las p
 - profundidad: porcentaje de profundidad total = z / media (x, y) = 2 * z / (x + y) (43--79)
 - tabla: ancho de la parte superior del diamante en relación con el punto más ancho (43--95)
 
-### Modelos implementados y librerías 
+### Modelos implementados 
 
-- GradientBoostingRegressor con Sklearn
-- RandomForestRegressor con Sklearn
-- ANN (red neuronal artificial) con Keras 
+- GradientBoostingRegressor 
+- RandomForestRegressor 
+- ANN (red neuronal artificial) 
 
-### Técnicas sugeridas·
+### Técnicas sugeridas
 
 - One hot encoding
 - Label encoding
@@ -41,3 +41,12 @@ Para ello, contamos con 2 datasets: uno para entrenar y otro para realizar las p
 - PCA
 - API / web scraping
 - Regression
+
+### Librerías
+
+Matplotlib
+Pandas
+Nummpy 
+Skalearn
+Keras
+Math
